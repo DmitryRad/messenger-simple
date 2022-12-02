@@ -23,7 +23,7 @@ const AppRouter = () => {
             <Routes>
                 {publicRoutes.map(({path, Component}) =>
                     <Route key={path} path={path} component={Component} exact={true}/>
-                )}p
+                )}
                 <Route path="/" element={<Navigate to={LOGIN_ROUTE}/>}/>
             </Routes>
         )

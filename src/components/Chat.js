@@ -1,18 +1,11 @@
 import React, {useContext, useState} from 'react';
 import {Context} from "../index";
 import {useAuthState} from "react-firebase-hooks/auth";
-import {Avatar, Button, Container, Grid} from "@mui/material";
-import * as PropTypes from "prop-types";
+import {Avatar, Button, Container, Grid, TextField} from "@mui/material";
 import {useCollectionData} from "react-firebase-hooks/firestore";
 import firebase from "firebase/compat/app";
 import Loader from "./Loader";
 
-
-function TextFiled(props) {
-    return null;
-}
-
-TextFiled.propTypes = {variant: PropTypes.string};
 const Chat = () => {
     const {auth, firestore} = useContext(Context);
     const [user] = useAuthState(auth);
@@ -38,9 +31,8 @@ const Chat = () => {
 
     return (
         <Container>
-
             <Grid container
-                  justifyContent={"center"}
+                  justify={"center"}
                   style={{height: window.innerHeight - 50, marginTop: 20}}>
                 <div style={{width: '80%', height: '70vh', border: '1px solid gray', overflowY: 'auto'}}>
                     {messages.map(message =>
@@ -65,7 +57,7 @@ const Chat = () => {
                     alignItems={"flex-end"}
                     style={{width: '80%'}}
                 >
-                    <TextFiled
+                    <TextField
                         fullWidth
                         rowsMax={2}
                         variant={"outlined"}
