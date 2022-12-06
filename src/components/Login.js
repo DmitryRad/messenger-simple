@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import { GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 import {Box, Button, Container, Grid} from "@mui/material";
 import {Context} from "../index";
@@ -11,8 +11,8 @@ const Login = () => {
     const {auth} = useContext(Context);
 
     const login = async () => {
-        const provider = new GoogleAuthProvider();
-        const {user} = await auth.signInWithPopup(provider)
+        const provider = new GoogleAuthProvider()
+        const {user} = await signInWithPopup(auth, provider);
         console.log(user);
     }
 

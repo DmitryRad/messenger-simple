@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { getAuth } from "firebase/auth";
 
 
 import App from './App';
@@ -20,7 +21,7 @@ firebase.initializeApp({
 
 export const Context = createContext(null);
 
-const auth = firebase.auth();
+const auth = getAuth();
 const firestore = firebase.firestore();
 
 

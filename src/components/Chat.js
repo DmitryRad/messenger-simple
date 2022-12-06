@@ -33,7 +33,7 @@ const Chat = () => {
         <Container>
             <Grid container
                   justify={"center"}
-                  style={{height: window.innerHeight - 50, marginTop: 20}}>
+                  style={{height: window.innerHeight - 50, paddingTop: 20}}>
                 <div style={{width: '80%', height: '70vh', border: '1px solid gray', overflowY: 'auto'}}>
                     {messages.map(message =>
                     <div style={{
