@@ -4,7 +4,6 @@ import {privateRoutes, publicRoutes} from "../routes";
 import {CHAT_ROUTE, LOGIN_ROUTE} from "../utils/const";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {Context} from "../index";
-import Chat from "./Chat";
 
 const AppRouter = () => {
     const {auth} = useContext(Context);

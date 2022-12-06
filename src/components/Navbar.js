@@ -1,9 +1,8 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {AppBar, Button, Grid, Toolbar} from "@mui/material";
 import {NavLink} from "react-router-dom";
 
 import {LOGIN_ROUTE} from "../utils/const";
-import {Context} from "../index";
 import {useAuthState} from "react-firebase-hooks/auth";
 import { getAuth, signOut } from "firebase/auth";
 

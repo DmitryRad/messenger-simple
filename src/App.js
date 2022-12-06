@@ -6,7 +6,6 @@ import './App.css';
 import {useAuthState} from "react-firebase-hooks/auth";
 import Loader from "./components/Loader";
 import {Context} from "./index";
-import Login from "./components/Login";
 
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
     return (
         <BrowserRouter>
             <Navbar/>
-            {/*<Login/>*/}
             <AppRouter/>
         </BrowserRouter>
     );
