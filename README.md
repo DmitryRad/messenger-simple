@@ -2,4 +2,8 @@
 
 Authorization by google on Firebase
 
-[> Link to chat <](https://dmitryrad.github.io/messenger-simple/)
+For install deps: run npm -i
+
+For start project: npm run start
+
+

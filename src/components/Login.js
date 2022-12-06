@@ -18,7 +18,7 @@ const Login = () => {
     return (
         <Container>
             <Grid container
-                  style={{height: window.innerHeight - 50}}
+                  style={{marginTop: 50}}
                   alignItems={"center"}
                   justifyContent={"center"}
             >
